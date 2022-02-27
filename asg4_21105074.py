@@ -28,7 +28,7 @@ def pascal(n, originaln=n):
     print('  '*(originaln-n), end='')
     #first number is always 1
     entry = 1
-    for i in range(1, n+1):
+    for i in range(1, n+1):  
         print(entry, end ='   ')
         #using Binomial Coefficient
         entry = entry * (n - i) // i
@@ -101,7 +101,7 @@ class Student:
 student1 = Student("Lakshay Sheokand", 21105046)
 print("Object created")
 #printing the assigned values
-print(f"The name of the student it {student1.name} and SID is {student1.sid}.")
+print(f"The name of the student is {student1.name} and SID is {student1.sid}.")
 #deleting object
 del student1
 print("")
